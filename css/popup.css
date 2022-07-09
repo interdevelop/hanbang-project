@@ -53,32 +53,32 @@
 
 .fixedPopupPamphlet .fixedPopupInner {
   display:inline-block; width: 1000px; height: 100vh;
-  overflow: scroll;
+  overflow: hidden;
   padding:20px 30px;
   font-size:15px;
   z-index: 10;
 }
 
 .logo {
-  position: absolute; top: 130px; width: 80px;
+  position: absolute; top: 180px; width: 80px;
   margin-left: 200px;
 }
 
 .logoTitle {
-  position: absolute; top: 220px; width: 220px;
+  position: absolute; top: 270px; width: 220px;
   margin-left: 205px;
   border-bottom: 1px solid #FFF;
   font-size: 12px; text-align: left; line-height: 15px; color: #FFF; font-family: 'GmarketSansLight';
 }
 
 .hanbangTitle {
-  position: absolute; bottom: 320px;
+  position: absolute; bottom: 280px;
   margin-left: 600px;
   font-size: 10px; text-align: left; line-height: 15px; color: #FFF; font-family: 'GmarketSansLight';
 }
 
 .downloadBtn {
-  position: absolute; bottom: 270px; width: 80px; height: 35px;
+  position: absolute; bottom: 220px; width: 80px; height: 35px;
   background: #DCFA33;
   margin-left: 600px;
   outline: none; border: none; border-radius: 5px;
@@ -92,13 +92,15 @@
 }
 
 .dsc {
+  position: relative; top: 50%; transform: translateY(-50%);
+  z-index: -10;
   width: 100%;
   border-radius: 50px;
 }
 
 .btn_close {
-  position: absolute; top: 55px; width: 35px; height: 35px;
-  margin-left: 865px;
+  position: absolute; top:95px; width: 35px; height: 35px;
+  margin-left: 875px;
   background: transparent; font-size: 40px; color: #FFF;
   outline: none; border: none;
   cursor: pointer;
