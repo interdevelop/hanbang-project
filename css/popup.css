@@ -1,0 +1,106 @@
+/* FONT */
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KCC-eunyoung';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KCC-eunyoung-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fixedPopupBtn {
+  position: fixed; top: 10%; right: 0; width: 50px; height: 200px;
+  z-index: 1;
+}
+
+.btn_open {
+  position: fixed; top: 10%; right: 0; width: 50px; height: 200px;
+  display: flex; justify-content: center; align-items: center;
+  font-weight:bold; color:#fff; writing-mode: vertical-rl; text-orientation: mixed;
+  text-decoration: none;
+  border-radius: 20px 0 0 20px;
+  background:#007CAA;
+  transition: .5s linear;
+  z-index: 999;
+}
+
+.btn_open:hover {
+  background: #0050C8;
+}
+
+.fixedPopupPamphlet {
+  display: none;
+  position:fixed; top:0; left:0; right:0; bottom:0;
+  background:rgba(0,0,0,.5);
+  font-size:0; text-align:center;
+}
+
+.fixedPopupPamphlet:after {
+  content:''; display:inline-block; width: 100%;
+}
+
+.fixedPopupPamphlet .fixedPopupInner {
+  display:inline-block; width: 1000px; height: 100vh;
+  overflow: scroll;
+  padding:20px 30px;
+  font-size:15px;
+  z-index: 10;
+}
+
+.logo {
+  position: absolute; top: 130px; width: 80px;
+  margin-left: 200px;
+}
+
+.logoTitle {
+  position: absolute; top: 220px; width: 220px;
+  margin-left: 205px;
+  border-bottom: 1px solid #FFF;
+  font-size: 12px; text-align: left; line-height: 15px; color: #FFF; font-family: 'GmarketSansLight';
+}
+
+.hanbangTitle {
+  position: absolute; bottom: 320px;
+  margin-left: 600px;
+  font-size: 10px; text-align: left; line-height: 15px; color: #FFF; font-family: 'GmarketSansLight';
+}
+
+.downloadBtn {
+  position: absolute; bottom: 270px; width: 80px; height: 35px;
+  background: #DCFA33;
+  margin-left: 600px;
+  outline: none; border: none; border-radius: 5px;
+  font-size: 12px; text-align: center; line-height: 15px; color: #000; font-family: 'GmarketSansBold';
+  transition: .5s ease;
+}
+
+.downloadBtn:hover {
+  background: #00AEEF;
+  color: #FFF;
+}
+
+.dsc {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.btn_close {
+  position: absolute; top: 55px; width: 35px; height: 35px;
+  margin-left: 865px;
+  background: transparent; font-size: 40px; color: #FFF;
+  outline: none; border: none;
+  cursor: pointer;
+  z-index: 5;
+}
